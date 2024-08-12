@@ -11,6 +11,48 @@ Once the data transfer tests are complete, the GPT aids in analyzing the results
 In addition to providing technical guidance, this GPT also suggests optimization techniques to enhance data transfer performance. By analyzing test results and considering factors like network bandwidth, storage speed, and CPU usage, it offers tailored recommendations for improving system efficiency. Whether users are working on a personal computer or a large-scale enterprise system, this GPT empowers them to effectively test and optimize data transfer performance across various platforms.
 
 #
+### Example Windows Load Test
+
+Here's an example code block for testing local disk-to-disk transfer performance on Windows using Python. This example will copy a 1 GB file from the C: drive to the D: drive and measure the time taken for the transfer.
+
+```
+import os
+import shutil
+import time
+
+# Define test parameters
+file_size = 1 * 1024 * 1024 * 1024  # 1 GB
+number_of_files = 1
+source_drive = "C:\\"
+destination_drive = "D:\\"
+test_file_name = "test_file.bin"
+
+# Create a large test file on the source drive
+source_file_path = os.path.join(source_drive, test_file_name)
+with open(source_file_path, "wb") as f:
+    f.write(os.urandom(file_size))
+
+# Measure transfer time for each file
+total_time = 0
+for i in range(number_of_files):
+    start_time = time.time()
+    destination_file_path = os.path.join(destination_drive, f"{test_file_name}_{i}")
+    shutil.copy(source_file_path, destination_file_path)
+    transfer_time = time.time() - start_time
+    total_time += transfer_time
+    print(f"File {i+1} transfer time: {transfer_time:.2f} seconds")
+
+# Calculate and print the average transfer time
+average_transfer_time = total_time / number_of_files
+print(f"Average transfer time: {average_transfer_time:.2f} seconds")
+
+# Clean up: remove the test files
+os.remove(source_file_path)
+for i in range(number_of_files):
+    os.remove(os.path.join(destination_drive, f"{test_file_name}_{i}"))
+```
+
+#
 ### Related Links
 
 [ChatGPT](https://github.com/sourceduty/ChatGPT)
