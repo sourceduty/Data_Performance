@@ -1,6 +1,6 @@
 ![Transfer Performance](https://github.com/user-attachments/assets/ace1e87b-d7f5-42f1-9030-15a3a8eb8dc0)
 
->  Test and analyze the data transfer capabilities computer systems. Stress test computer networks, memory, storage and ports.
+>  Test and analyze the data transfer capabilities of computer systems. Stress test computer networks, memory, storage and ports.
 
 #
 
