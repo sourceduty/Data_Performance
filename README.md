@@ -4,7 +4,7 @@
 
 #
 
-[Data Performance](https://chatgpt.com/g/g-5olyGrVM8-transfer-performance) was developed to assist users in evaluating and optimizing data transfer performance on their computer systems. It provides step-by-step guidance in developing Python programs that simulate and analyze bulk data transfers, helping users to accurately test and measure the capabilities of their systems. By guiding users through the entire process, from setting up tests to interpreting results, it ensures that the evaluations are thorough and reflective of real-world scenarios.
+[Data Performance](https://chatgpt.com/g/g-5olyGrVM8-data-performance) was developed to assist users in evaluating and optimizing data transfer performance on their computer systems. It provides step-by-step guidance in developing Python programs that simulate and analyze bulk data transfers, helping users to accurately test and measure the capabilities of their systems. By guiding users through the entire process, from setting up tests to interpreting results, it ensures that the evaluations are thorough and reflective of real-world scenarios.
 
 Once the data transfer tests are complete, the GPT aids in analyzing the results, offering insights into the performance metrics and identifying potential bottlenecks in the system. This analysis helps users understand how their system handles large data transfers and what areas might require optimization. The GPT's ability to break down complex performance data into actionable information is crucial for users who want to make informed decisions about their system’s data transfer capabilities.
 
