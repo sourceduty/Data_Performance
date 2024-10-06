@@ -53,6 +53,10 @@ for i in range(number_of_files):
 ```
 
 #
+
+![Storage Meme](https://github.com/user-attachments/assets/139c9c16-616a-4a9f-95dc-a3aefd128ff6)
+
+#
 ### Related Links
 
 [ChatGPT](https://github.com/sourceduty/ChatGPT)
